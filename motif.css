@@ -1,13 +1,13 @@
 :root {
     --main-font: 'ChiKareGo2';
 
-    --main-color: #a0a0a0;
-    --border-light: #d6d6d6;
-    --border-dark: #535353; 
+    --main-color: #a7a2b6;
+    --border-light: #d9caf7;
+    --border-dark: #4a4050; 
 
-    --accent: rgb(22, 147, 151);
-    --accent-light: rgb(111, 194, 194);
-    --accent-dark: rgb(12, 51, 51);
+    --accent: rgb(145, 68, 98);
+    --accent-light: rgb(192, 113, 143);
+    --accent-dark: rgb(95, 23, 89);
 
     --titlebar-height: 22px;
 
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background-image: url('res/img/sine.png');
+    background-image: url('res/img/weave.png');
     font-family: var(--main-font);
     font-smooth: never;
     -webkit-font-smoothing : none;
@@ -36,6 +36,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    font-size: 16px;
 }
 
 input[type="text"] {
