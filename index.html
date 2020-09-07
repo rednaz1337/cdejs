@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="motif.css">
+    <title>CDE</title>
+    <style>
+        #mainwindow {
+            width: 300px;
+            top: 70px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Welcome to my website!
+    </h1>
+    <div class="window" id="timewindow">
+        <div class="titlebar">
+            <button class="close"></button>
+            <span class="title">
+                Adjust time
+            </span>
+            <button class="maximise"></button>
+            <button class="minimise"></button>
+        </div>
+        <div class="main container pane column">
+            <div style="text-align: center;">
+                14:16:06
+            </div>
+            <div class="container pane">
+                <span>
+                    Add <input type="text"> (h:m:s) to system time 
+                </span> 
+            </div>
+            <div class="container pane column">
+                <span>
+                    Timezone is GMT <input type="text"> (h:m)
+                </span>
+                <span class="row">
+                    Daylight Saving is
+                    <fieldset>
+                        <input type="radio" id="mc" name="Zahlmethode" value="Mastercard">
+                        <label for="mc"> use system time</label>
+                        <input type="radio" id="vi" name="Zahlmethode" value="Visa">
+                        <label for="vi"> always on</label>
+                        <input type="radio" id="ae" name="Zahlmethode" value="AmericanExpress">
+                        <label for="ae"> always off</label>
+                        <input checked type="radio" id="ff" name="Zahlmethode" value="AmericanExpress">
+                        <label for="ff"> automatic</label>
+                    </fieldset>
+                </span>
+                <span>
+                    Automatic DST from Julian day <input type="text" style="width: 40px;"> to <input type="text" style="width: 40px;">
+                </span>
+            </div>
+            <span class="container row" style="justify-content: flex-end;">
+                <button>
+                    Guess
+                </button>
+                <button>
+                    Help
+                </button>
+                <button>
+                    Done
+                </button>
+            </span>
+        </div>
+    </div>
+
+    <div class="window active" id="mainwindow">
+        <div class="titlebar">
+            <button class="close"></button>
+            <span class="title">
+                Image Viewer
+            </span>
+            <button class="maximise"></button>
+            <button class="minimise"></button>
+        </div>
+
+        <div class="main container pane column">
+            <p>
+                <u>File:</u> /usr/heinrich/radio.gif
+            </p>
+            <div class="container pane column" style="padding: 1px;">
+                <img src="res/img/banner.gif">
+            </div>
+            <div class="container pane column" style="height: 150px; overflow: auto;">
+                <p style="text-decoration: underline;">
+                    Image Description
+                </p>
+                <p>
+                    Willkommen auf meiner Webseite!
+                    Diese Seite ist im Stil des Solaris 10 Desktops aus den 90er Jahren,
+                    weshalb sie aus Fenstern besteht die verschoben werden können.
+                    Das zweite Fenster im Hintergrund ist nur um Widgets und layouts zu testen.
+                </p>
+                <p>
+                    Zwar befindet sich noch nicht sehr viel inhalt auf dieser Seite, jedoch wünsche ich trotzdem viel Spaß <br>
+                    :D
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="cde.js"></script>
+</body>
+</html>
