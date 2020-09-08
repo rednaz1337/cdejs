@@ -143,6 +143,13 @@ label::after {
     flex-direction: column;
 }
 
+.inset {
+    border: 2px solid var(--border-dark);
+
+    border-right-color: var(--border-light);
+    border-bottom-color: var(--border-light);
+}
+
 .row {
     display: flex;
     flex-direction: row;
